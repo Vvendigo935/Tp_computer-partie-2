@@ -26,9 +26,11 @@ public class Computer {
     @Embedded
     private Identification identification;
 
-    @ManyToOne(cascade = {CascadeType.MERGE,CascadeType.REFRESH})
+    @ManyToOne
     @JoinColumn(name = "id_os")
     private OperatingSystem operatingSystem;
+
+    @ManyToOne
     @JoinColumn(name = "id_processor")
     private Processor processor;
 

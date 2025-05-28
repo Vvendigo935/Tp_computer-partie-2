@@ -21,7 +21,7 @@ public class Processor {
 
     private String processor;
 
-    @OneToMany(mappedBy = "Computer")
+    @OneToMany(mappedBy = "processor")
     private List<Computer> computers;
 
 }

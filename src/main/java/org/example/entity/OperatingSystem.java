@@ -23,7 +23,7 @@ private String opSystem;
 
 
 
-    @OneToMany(mappedBy = "Computer")
+    @OneToMany(mappedBy = "operatingSystem")
     private List<Computer> computers;
 
 }
