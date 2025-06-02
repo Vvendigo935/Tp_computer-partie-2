@@ -16,4 +16,12 @@ import javax.persistence.Embedded;
 public class Identification {
     private String mac;
     private String ipAddress;
+
+    @Override
+    public String toString() {
+        return "Identification{" +
+                "mac='" + mac + '\'' +
+                ", ipAddress='" + ipAddress + '\'' +
+                '}';
+    }
 }

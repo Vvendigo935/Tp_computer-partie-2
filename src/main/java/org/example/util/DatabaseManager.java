@@ -9,7 +9,7 @@ public class DatabaseManager {
     private static EntityManager entityManager;
 
     private DatabaseManager(){
-        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("tpComputer");
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("jpa_demo");
         entityManager = entityManagerFactory.createEntityManager();
     }
 

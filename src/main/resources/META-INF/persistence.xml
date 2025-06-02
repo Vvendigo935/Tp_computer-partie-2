@@ -4,10 +4,10 @@
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
              version="3.0">
 
-    <persistence-unit name="tpComputer">
+    <persistence-unit name="jpa_demo">
 
         <description>Persistence pour demo jpa a M2i</description>
-        <class>org.example.entity.Animal</class>
+        <class>org.example.entity.Computer</class>
 
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>

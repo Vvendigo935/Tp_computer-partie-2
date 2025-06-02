@@ -34,4 +34,31 @@ public class Computer {
     @JoinColumn(name = "id_processor")
     private Processor processor;
 
+    @ManyToMany
+    @JoinTable(name = "computer_project",
+            joinColumns = @JoinColumn(name = "computerId"),
+            inverseJoinColumns = @JoinColumn(name = "projectId"))
+    private List<Project> projects;
+
+    public void addProject(Project project){
+        projects.add(project);
+    }
+    public void deleteProject(Project project){
+        projects.remove(project);
+    }
+    public void setProject(Project project){
+        projects.set(id, project);
+    }
+
+
+    @Override
+    public String toString() {
+        return "Computer : " +
+                "id du PC : " + id +
+                ", le modèle :" + model + '\'' +
+                ", les matricules : " + identification +
+                ", OS : " + operatingSystem +
+                ", le processeur" + processor +
+                ", affecté au projet : " + projects;
+    }
 }
