@@ -48,28 +48,30 @@ public class Main {
 //        em.getTransaction().commit();
 //
 //        em.getTransaction().begin();
+//
         Computer computer1 = em.find(Computer.class, 1);
         Computer computer2 = em.find(Computer.class, 2);
-        Project pj1 = em.find(Project.class, 1);
-        Project pj2 = em.find(Project.class, 2);
-
+//        Project pj1 = em.find(Project.class, 1);
+//        Project pj2 = em.find(Project.class, 2);
+//
 //        computer1.addProject(pj1);
 //        computer2.addProject(pj2);
+//
 //        em.getTransaction().commit();
 
 //        Computer computer1 = em.find(Computer.class, 1);
-        System.out.println(computer1);
-        System.out.println(computer2);
-
-
-        Computer computerFound = computerDAO.getById(1, Computer.class);
-        computerFound.setProject(projectDAO.getById(2, Project.class));
-
-        computerDAO.update(computerFound);
-
-
-        System.out.println(computer1.getProjects());
-        System.out.println(computer2);
+//        System.out.println(computer1);
+//        System.out.println(computer2);
+//
+//
+//        Computer computerFound = computerDAO.getById(1, Computer.class);
+//        computerFound.setProject(projectDAO.getById(2, Project.class));
+//
+//        computerDAO.update(computerFound);
+//
+//
+//        System.out.println(computer1.getProjects());
+//        System.out.println(computer2);
 
 //        Project pj1 = em.find(Project.class, 1);
 
